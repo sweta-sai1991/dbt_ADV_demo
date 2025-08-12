@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: stg_categories
+    description: Stage model for pre Data Vault calculations categories
+  - name: stg_customer_customer_demo
+    description: Stage model for pre Data Vault calculations customer demo
+  - name: stg_customer_demographics
+    description: Stage model for pre Data Vault calculations customer_demographics
+  - name: stg_customers
+    description: Stage model for pre Data Vault calculations customers
+  - name: stg_employees
+    description: Stage model for pre Data Vault calculations employees
+  - name: stg_employees_territories
+    description: Stage model for pre Data Vault calculations employees_territories
+  - name: stg_order_details
+    description: Stage model for pre Data Vault calculations order_details
+  - name: stg_orders
+    description: Stage model for pre Data Vault calculations orders
+  - name: stg_products
+    description: Stage model for pre Data Vault calculations products
+  - name: stg_regions
+    description: Stage model for pre Data Vault calculations regions
+  - name: stg_shippers
+    description: Stage model for pre Data Vault calculations shippers
+  - name: stg_suppliers
+    description: Stage model for pre Data Vault calculations suppliers
+  - name: stg_territories
+    description: Stage model for pre Data Vault calculations territories
+  - name: stg_order_shippers
+    description: Stage model for pre Data Vault calculations joining order and shipper
+
+

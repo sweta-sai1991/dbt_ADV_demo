@@ -1,0 +1,1 @@
+select * from {{ source('bigquery','order_details')}}

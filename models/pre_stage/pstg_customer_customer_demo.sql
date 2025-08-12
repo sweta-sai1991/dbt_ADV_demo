@@ -1,0 +1,1 @@
+select * from {{ source('bigquery','customer_customer_demo')}}
