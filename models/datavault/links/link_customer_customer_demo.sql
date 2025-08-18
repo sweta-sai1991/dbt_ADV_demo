@@ -6,6 +6,6 @@ select
    md5(cast(customer_id as string) || '|' || cast(customer_type_id as string)) as customer_customer_demo_lk,
    customer_id, customer_type_id,
    current_timestamp() as load_date,
-   'customer_customer_demo' as record_source
-from {{ ref('customer_customer_demo') }}
+   'customer_customer_demo_raw' as record_source
+from {{ source('bigquery_data', 'customer_customer_demo_raw') }}
 {% endraw %}

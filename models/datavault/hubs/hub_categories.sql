@@ -6,6 +6,6 @@ select
    md5(cast(category_id as string)) as categories_hk,
    category_id,
    current_timestamp() as load_date,
-   'categories' as record_source
-from {{ ref('categories') }}
+   'categories_raw' as record_source
+from {{ source('bigquery_data', 'categories_raw') }}
 {% endraw %}
