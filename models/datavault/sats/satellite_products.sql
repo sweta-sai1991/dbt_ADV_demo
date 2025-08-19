@@ -1,6 +1,6 @@
 
 -- Auto-generated Satellite: products
-{% raw %}
+
 {{ config(materialized='incremental') }}
 select
    md5(cast(product_id as string)) as products_hk,
@@ -8,4 +8,4 @@ select
    current_timestamp() as load_date,
    'products' as record_source
 from {{ source('bigquery', 'products') }}
-{% endraw %}
+
